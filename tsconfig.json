@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "None",
+    "moduleResolution": "Node",
+    "outFile": "dist/xmsg.js",
+    "rootDir": "src",
+    "declaration": false,
+    "sourceMap": false,
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

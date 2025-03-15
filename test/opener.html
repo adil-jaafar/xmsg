@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>  
+<head>
+  <title>Opener</title>
+  <script src="../dist/xmsg.js"></script>
+</head>
+<body>
+  <h1>Opener</h1>
+    <button onclick="openUrl('child.html', '_blank');">Open Child</button>
+  <script>
+    function openUrl(url, target) {
+        const win = window.open(url, target);
+        win.onload = async () => {
+            const xmsg = new Xmsg(win, window.location.origin, {
+                add: (a, b) => a + b,
+                subtract: (a, b) => a - b
+            });
+            await xmsg.connect();
+            console.log('Connected');
+        };
+    }
+  </script>
+</body>
+</html>

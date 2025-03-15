@@ -1,0 +1,24 @@
+{
+  "name": "xmsg",
+  "version": "1.0.0",
+  "description": "xmsg (pronounced \"cross-message\"): A zero-dependency JavaScript library simplifying secure postMessage communication between windows. Effortlessly establish robust RPC tunnels with minimal overhead.",
+  "main": "dist/xmsg.js",
+  "types": "dist/xmsg.d.ts",
+  "module": "dist/xmsg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
